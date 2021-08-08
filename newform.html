@@ -1,0 +1,199 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="validate.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    th,td{
+        padding: 10px;
+    
+    }
+    table{
+        
+    }
+</style>
+
+<body >
+    <form action="#" name="StudentRegistration" onSubmit="return(validate());" method="get">
+        <table cellpadding="4" width="40%" height="100%"  bgcolor="lightgray" align="center" cellspacing="3" style="border:1px black solid;">
+            <tr>
+                <td colspan=2>
+                    <font size=5><b>Personal Information<b></b></font>
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="right"><b>First name:</b></td>
+                <td><input type=text name=textnames id="textname" size="30" required></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Last name:</b></td>
+                <td><input type="text" name="fathername" id="fathername" size="30" required></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Date of birth:</b></td>
+                <td><select placeholder="MM">
+                    <option name="" value="" style="display:none;">MM</option>
+                    <option name="January" value="Jan">January</option>
+                    <option name="February" value="Feb">February</option>
+                    <option name="March" value="Mar">March</option>
+                    <option name="April" value="Apr">April</option>
+                    <option name="May" value="May">May</option>
+                    <option name="June" value="Jun">June</option>
+                    <option name="July" value="Jul">July</option>
+                    <option name="August" value="Aug">August</option>
+                    <option name="September" value="Sep">September</option>
+                    <option name="October" value="Oct">October</option>
+                    <option name="November" value="Nov">November</option>
+                    <option name="December" value="Dec">December</option>
+                </select>
+                
+                  <select name="day" >
+                      <option>Day</option>
+                      <option value="sum">1</option>
+                      <option value="mon">2</option>
+                      <option value="tue">3</option>
+                      <option value="tue">4</option>
+                      <option value="tue">5</option>
+                      <option value="tue">6</option>
+                      <option value="tue">7</option>
+                      <option value="tue">8</option>
+                      <option value="tue">9</option>
+                      <option value="tue">10</option>
+                      <option value="tue">11</option>
+                      <option value="tue">12</option>
+                  </select>
+                  
+                  <select name="year">
+                      <option>Year</option>
+                      <option value="2015">1995</option>
+                      <option value="2016">1996</option>
+                      <option value="2017">1997</option>
+                      <option value="2017">1998</option>
+                      <option value="2017">1999</option>
+                      <option value="2017">2000</option>
+                      <option value="2017">2001</option>
+                      <option value="2017">2002</option>
+                      <option value="2017">2003</option>
+                      <option value="2017">2004</option>
+                      <option value="2017">2005</option>
+                      <option value="2017">2006</option>
+                      <option value="2017">2007</option>
+                      <option value="2017">2008</option>
+                      <option value="2017">2009</option>
+                  </select>  
+                <abbr title="Select Correct options">
+                    <img class="h-img" src="help.png" width="20px" height="18px" alt="?"></abbr>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><b>Gender:</b></td>
+                
+                <td> <label for="male1">Male</label>
+                    <input type="radio" id="male1" name="male"><br>
+                    <label for="female1">Female</label>
+                    <input type="radio" id="female1" name="male">
+                    <abbr title="Select option">
+                        <img class="h-img" src="help.png" width="20px" height="18px" alt="?"></abbr>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2>
+                    <font size=5><b>Account Information</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"  ><b>Email:</b></td>
+                <td><input type="email" name="email" id="email1" size="30" required><br>
+                    <font size=2>(your email address will be your username)</font>
+                    
+                </td>
+            
+            </tr>
+            <tr>
+                <td align="right"><b>Re-type Email:</b></td>
+                <td><input type="email" name="email" id="email1" size="30" required></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Password:</b></td>
+                <td><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" id="password" size="30" required><br>
+                    <font size=2>(Min. 8 characters,1 number,case-sensitive)</font>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><b>Re-type Password:</b></td>
+                <td><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" id="Repassword" size="30" required></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Security Question:</b></td>
+                <td> <select id="secq" name="security questions">
+                    <option value="-1" >Choose a security question</option>
+                        <option value="childhood_name">What is your childhood name?</option>
+                        <option value="favorite_place">What is your favroite place?</option>
+                        <option value="school_name">What was the name of your first school?</option>
+                    </select></td>
+
+            </tr>
+            <tr>
+                <td align="right"><b>Security Answer:</b></td>
+                <td><input type="text" name="security" id="security1" size="30" required>
+                    <abbr title="Select option">
+                        <img class="h-img" src="help.png" width="20px" height="18px" alt="?"></abbr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2>
+                    <font size=5><b>Contact Information<b></b></font>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><b>Address:</b></td>
+                <td><input type="text" name="address" id="address1" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right"><b>City:</b></td>
+                <td><input type="text" name="city" id="city1" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right"><b>State:</b></td>
+                <td><select id="choose" name="Select a state">
+                    <option value="-1">Select</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="haryana">Haryana</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td align="right"><b>Zip code:</b></td>
+                <td><input type="number" name="zip" id="zip1" size="30">
+                    <button type="button" value="Optional" disabled>Optional</button>
+                </td>
+                 
+                    
+            </tr>
+
+            <tr>
+                <td align="right"><b>Phone:</b></td>
+                <td><input type="number" name="phone" id="phone1" size="30">
+                    <abbr title="Select option">
+                        <img class="h-img" src="help.png" width="20px" height="18px" alt="?"></abbr>
+                    <select name="">
+                    <option value="-1">Mobile</option>
+                    <option value="phone">Phone</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><button type="submit" value="Submit">Submit</button></td>
+            <td> 
+                <button type="reset" value="Reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
